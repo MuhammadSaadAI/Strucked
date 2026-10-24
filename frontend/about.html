@@ -4,172 +4,299 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strucked | About Us</title>
+    <meta name="description" content="About Struked LLC — A dedicated construction cost estimation company helping general contractors and subcontractors make informed project decisions through accurate, reliable estimates.">
+    <title>About Us | Struked LLC — Construction Estimation & Design</title>
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- AOS Animation CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <style>
-        .page-header {
-            background: linear-gradient(rgba(13, 71, 161, 0.8), rgba(223, 223, 234, 0.9)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
-            padding: 150px 0 80px;
-            color: rgb(250, 247, 247);
-            text-align: center;
-        }
-    </style>
 </head>
 
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Strucked</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+    <!-- ========== NAVBAR ========== -->
+    <nav class="site-nav scrolled" id="siteNav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" aria-label="Struked LLC Home">
+                <img src="./Media/WhatsApp Image 2026-10-21 at 6.39.10 PM.jpeg"
+                     alt="Struked LLC"
+                     class="nav-logo-img">
+                <div class="nav-logo-text">
+                    <span class="nav-logo-brand">Struked</span>
+                    <span class="nav-logo-llc">LLC</span>
+                </div>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link" id="nav-home">Home</a>
+                <a href="about.html" class="nav-link active" id="nav-about">About Us</a>
+                <a href="services.html" class="nav-link" id="nav-services">Our Services</a>
+                <a href="index.html#process" class="nav-link" id="nav-process">Our Process</a>
+                <a href="contact.html" class="nav-link" id="nav-contact">Contact Us</a>
+            </div>
+            <a href="contact.html#quote" class="btn btn-primary btn-sm nav-cta" id="nav-quote-btn">
+                <i class="fas fa-file-invoice"></i> Request a Quote
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-center">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button"
-                            data-bs-toggle="dropdown">Services</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="services.html">General Construction</a></li>
-                            <li><a class="dropdown-item" href="services.html">Mechanical Estimation</a></li>
-                            <li><a class="dropdown-item" href="services.html">Electrical Estimation</a></li>
-                            <li><a class="dropdown-item" href="services.html">Plumbing Estimation</a></li>
-                            <li><a class="dropdown-item" href="services.html">BIM Cost Modeling</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    <li class="nav-item ms-lg-3">
-                        <a class="btn btn-primary-custom btn-sm" href="login.html">Login</a>
-                    </li>
-                </ul>
+        </div>
+        <div class="nav-mobile" id="navMobile">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link active">About Us</a>
+            <a href="services.html" class="nav-link">Our Services</a>
+            <a href="index.html#process" class="nav-link">Our Process</a>
+            <a href="contact.html" class="nav-link">Contact Us</a>
+            <div class="nav-cta">
+                <a href="contact.html#quote" class="btn btn-primary" id="mobile-quote-btn">
+                    <i class="fas fa-file-invoice"></i> Request a Quote
+                </a>
             </div>
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1 data-aos="fade-up">About Strucked </h1>
-            <p data-aos="fade-up" data-aos-delay="100">Precision in Construction Estimation.</p>
+    <!-- ========== PAGE HERO ========== -->
+    <section class="page-hero">
+        <div class="page-hero-bg" style="background-image: url('./Media/Redefining-construction-budgeting-2-1.jpg');"></div>
+        <div class="page-hero-overlay"></div>
+        <div class="container page-hero-content">
+            <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span style="color:rgba(255,255,255,0.7);">About Us</span>
+            </nav>
+            <p class="text-overline" data-aos="fade-up" style="color:var(--accent-light);">Our Story</p>
+            <h1 data-aos="fade-up" data-aos-delay="100">About Struked LLC</h1>
+            <p data-aos="fade-up" data-aos-delay="200">Dedicated to accurate construction estimation and design support for construction professionals.</p>
         </div>
     </section>
 
-    <!-- Mission & Vision -->
-    <section class="section-padding">
+    <!-- ========== COMPANY OVERVIEW ========== -->
+    <section class="section">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <h5 class="text-secondary fw-bold text-uppercase mb-2">Our Mission</h5>
-                    <h2 class="mb-4">Empowering Builders with Data-Driven Clarity</h2>
-                    <p>At Antenity, our mission is to eliminate the financial guesswork in construction. We provide
-                        contractors, developers, and architects with highly accurate, comprehensive cost estimates and
-                        BOQs.</p>
-                    <p>We leverage advanced software, industry expertise, and meticulous attention to detail to ensure
-                        your bids are competitive and your profit margins remain protected.</p>
+            <div class="about-grid">
+                <div class="about-img-wrap" data-aos="fade-right">
+                    <img src="./Media/Redefining-construction-budgeting-2-1.jpg"
+                         alt="Construction professionals at a project site"
+                         class="about-img-main">
+                    <img src="./Media/Redefining-construction-budgeting-1.jpg"
+                         alt="Construction blueprints and planning tools"
+                         class="about-img-accent">
                 </div>
-                <div class="col-lg-6" data-aos="fade-left">
-                    <img src="./Media/download.jpg" alt="Engineers working" class="img-fluid rounded shadow-lg"
-                        style="width:400px">
+
+                <div class="about-content" data-aos="fade-left">
+                    <p class="text-overline">Who We Are</p>
+                    <h2>Struked LLC — Pre-Construction Services</h2>
+                    <p>
+                        Struked LLC is a construction cost estimation company dedicated to helping general contractors and subcontractors make informed project decisions through accurate, reliable estimates.
+                    </p>
+                    <p>
+                        Our services include detailed material takeoffs and design-build support, helping construction professionals improve planning, manage costs, and approach projects with confidence.
+                    </p>
+                    <p>
+                        We work with a focused methodology — reviewing your project drawings carefully, applying precise quantity calculations, and delivering organized estimates that give you a clear picture of your project's cost requirements.
+                    </p>
+
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>General Contractors</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Subcontractors</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Pre-Construction Planning</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Accurate Cost Data</span>
+                        </div>
+                    </div>
+
+                    <a href="contact.html#quote" class="btn btn-primary" id="about-quote-btn">
+                        <i class="fas fa-file-invoice"></i> Request a Quote
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Target Audience Section -->
-    <section class="section-padding bg-light">
-        <div class="container text-center">
-            <div class="mb-5" data-aos="fade-up">
-                <h5 class="text-secondary fw-bold text-uppercase mb-2">Who We Serve</h5>
-                <h2>Dedicated to the Industry's Best</h2>
+    <!-- ========== MISSION & VALUES ========== -->
+    <section class="section section-muted">
+        <div class="container">
+            <div class="section-header center" data-aos="fade-up">
+                <p class="text-overline">Our Foundation</p>
+                <h2>Mission & Values</h2>
+                <p>The principles that guide every estimate we prepare and every client relationship we build.</p>
             </div>
-            <div class="row g-4">
-                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="bg-white p-4 rounded shadow-sm h-100">
-                        <i class="fas fa-hard-hat fa-3x text-primary mb-3"></i>
-                        <h4>General Contractors</h4>
-                        <p class="text-muted">Win competitive bids with precise material and labor takeoff reports.</p>
+
+            <div style="display:grid; grid-template-columns: repeat(2, 1fr); gap:1.75rem; margin-top:3rem;">
+                <div class="mission-card" data-aos="fade-up" data-aos-delay="100">
+                    <div style="width:48px;height:48px;background:rgba(245,158,11,0.1);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;margin-bottom:1rem;">
+                        <i class="fas fa-bullseye" style="color:var(--accent);font-size:1.2rem;"></i>
                     </div>
+                    <h3>Our Mission</h3>
+                    <p>To provide general contractors and subcontractors with accurate, detailed construction cost estimates and material takeoffs that support confident project planning and decision-making.</p>
                 </div>
-                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="bg-white p-4 rounded shadow-sm h-100">
-                        <i class="fas fa-city fa-3x text-primary mb-3"></i>
-                        <h4>Real Estate Developers</h4>
-                        <p class="text-muted">Understand exact project budget requirements before securing financing.
-                        </p>
+
+                <div class="mission-card" data-aos="fade-up" data-aos-delay="150">
+                    <div style="width:48px;height:48px;background:rgba(245,158,11,0.1);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;margin-bottom:1rem;">
+                        <i class="fas fa-eye" style="color:var(--accent);font-size:1.2rem;"></i>
                     </div>
+                    <h3>Our Vision</h3>
+                    <p>To be a trusted pre-construction resource for construction professionals who value accuracy, clear communication, and practical planning support at every stage of a project.</p>
                 </div>
-                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="bg-white p-4 rounded shadow-sm h-100">
-                        <i class="fas fa-drafting-compass fa-3x text-primary mb-3"></i>
-                        <h4>Architects & Engineers</h4>
-                        <p class="text-muted">Ensure designs align with client budgets through iterative cost modeling.
-                        </p>
+
+                <div class="mission-card" data-aos="fade-up" data-aos-delay="200">
+                    <div style="width:48px;height:48px;background:rgba(245,158,11,0.1);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;margin-bottom:1rem;">
+                        <i class="fas fa-shield-halved" style="color:var(--accent);font-size:1.2rem;"></i>
                     </div>
+                    <h3>Accuracy First</h3>
+                    <p>Every estimate we prepare is approached with careful review of project documentation, precise quantity calculations, and a commitment to delivering information you can rely on.</p>
+                </div>
+
+                <div class="mission-card" data-aos="fade-up" data-aos-delay="250">
+                    <div style="width:48px;height:48px;background:rgba(245,158,11,0.1);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;margin-bottom:1rem;">
+                        <i class="fas fa-handshake" style="color:var(--accent);font-size:1.2rem;"></i>
+                    </div>
+                    <h3>Professional Partnership</h3>
+                    <p>We work as an extension of your team, communicating clearly and responsively to ensure the estimation process is smooth and that your questions are answered throughout.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
+    <!-- ========== WHO WE SERVE ========== -->
+    <section class="section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <h4 class="mb-4">Strucked</h4>
-                    <p>Providing industry-leading construction estimation services to help contractors and developers
-                        win bids and maximize profits.</p>
+            <div class="section-header center" data-aos="fade-up">
+                <p class="text-overline">Who We Serve</p>
+                <h2>Construction Professionals We Support</h2>
+                <p>Our estimation services are built specifically for the professionals managing real construction projects.</p>
+            </div>
+
+            <div class="team-who-serve">
+                <div class="serve-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-hard-hat"></i>
+                    <h4>General Contractors</h4>
+                    <p>Accurate project cost estimates and material quantity breakdowns to support bidding, planning, and budget management on your construction projects.</p>
                 </div>
-                <div class="col-lg-4 mb-4">
-                    <h5 class="mb-4">Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="about.html">About Us</a></li>
-                        <li class="mb-2"><a href="services.html">Services</a></li>
-                        <li class="mb-2"><a href="contact.html">Contact Us</a></li>
+                <div class="serve-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-tools"></i>
+                    <h4>Subcontractors</h4>
+                    <p>Detailed takeoffs and cost data specific to your trade scope, helping you prepare competitive and well-informed bids.</p>
+                </div>
+                <div class="serve-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-building"></i>
+                    <h4>Construction Companies</h4>
+                    <p>Structured pre-construction cost planning support to help your team approach projects with a clear financial framework before work begins.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== IMAGE SECTION ========== -->
+    <section class="section why-section">
+        <div class="container">
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center;">
+                <div data-aos="fade-right">
+                    <p class="text-overline" style="color:var(--accent-light);">Our Approach</p>
+                    <h2 style="color:#fff; margin:0.75rem 0 1.25rem;">Practical Estimation for Real Projects</h2>
+                    <p style="color:rgba(255,255,255,0.68); font-size:1.02rem; line-height:1.8; margin-bottom:1.5rem;">
+                        At Struked LLC, we focus on delivering practical, usable estimates — not just numbers on a page. Every estimate is prepared with the goal of giving you the information you need to make sound project decisions.
+                    </p>
+                    <p style="color:rgba(255,255,255,0.68); font-size:1.02rem; line-height:1.8; margin-bottom:2rem;">
+                        We review your drawings and specifications carefully, calculate material quantities accurately, and organize our findings in a clear format that supports your planning and procurement process.
+                    </p>
+                    <a href="contact.html#quote" class="btn btn-primary" id="about-approach-btn">
+                        <i class="fas fa-arrow-right"></i> Start a Project
+                    </a>
+                </div>
+                <div data-aos="fade-left">
+                    <img src="./Media/CostBuild-Planning-The-future-of-construction-2-1.jpg"
+                         alt="Construction cranes at a project site at sunset"
+                         style="width:100%; height:440px; object-fit:cover; border-radius:var(--radius-lg); box-shadow:var(--shadow-xl);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo-wrap">
+                        <img src="./Media/WhatsApp Image 2026-10-21 at 6.39.10 PM.jpeg"
+                             alt="Struked LLC"
+                             class="footer-logo-img">
+                        <div class="footer-logo-text">
+                            <span class="footer-logo-brand">Struked</span>
+                            <span class="footer-logo-llc">LLC</span>
+                        </div>
+                    </div>
+                    <p class="footer-desc">Struked LLC provides accurate construction cost estimation and design services to help general contractors and subcontractors plan projects with confidence.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="footer-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="footer-social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer-social" aria-label="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-col-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right" style="font-size:0.65rem;"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right" style="font-size:0.65rem;"></i> About Us</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right" style="font-size:0.65rem;"></i> Our Services</a></li>
+                        <li><a href="index.html#process"><i class="fas fa-chevron-right" style="font-size:0.65rem;"></i> Our Process</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right" style="font-size:0.65rem;"></i> Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4 mb-4">
-                    <h5 class="mb-4">Contact Info</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@struked.com</li>
-                        <li class="mb-2"><i class="fas fa-phone me-2"></i> +1 (743) 249-2196</li>
+                <div>
+                    <h4 class="footer-col-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#cost-estimation"><i class="fas fa-chevron-right" style="font-size:0.65rem;"></i> Cost Estimation</a></li>
+                        <li><a href="services.html#material-takeoffs"><i class="fas fa-chevron-right" style="font-size:0.65rem;"></i> Material Takeoffs</a></li>
+                        <li><a href="services.html#design-build"><i class="fas fa-chevron-right" style="font-size:0.65rem;"></i> Design-Build</a></li>
+                        <li><a href="services.html#budget-planning"><i class="fas fa-chevron-right" style="font-size:0.65rem;"></i> Budget Planning</a></li>
+                        <li><a href="services.html#blueprint-review"><i class="fas fa-chevron-right" style="font-size:0.65rem;"></i> Blueprint Review</a></li>
                     </ul>
                 </div>
+                <div>
+                    <h4 class="footer-col-title">Contact Info</h4>
+                    <div class="footer-contact-items">
+                        <div class="footer-contact-item"><i class="fas fa-user"></i><span>Zack Adams, Owner</span></div>
+                        <div class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:+17432492196">+1 (743) 249-2196</a></div>
+                        <div class="footer-contact-item"><i class="fas fa-envelope"></i><a href="mailto:info@struked.com">info@struked.com</a></div>
+                        <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>702 Westchester Dr Apt F,<br>High Point, NC 27262, USA</span></div>
+                        <div class="footer-contact-item" style="margin-top:0.5rem;">
+                            <a href="contact.html#quote" class="btn btn-primary btn-sm" id="footer-quote-btn">
+                                <i class="fas fa-file-invoice"></i> Request a Quote
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <hr class="mt-4 mb-3 border-secondary">
-            <div class="text-center">
-                <p class="mb-0">&copy; 2026 Strucked. All Rights Reserved.</p>
+            <div class="footer-bottom">
+                <p class="footer-copy">&copy; 2026 Struked LLC. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
-
 </html>

@@ -4,218 +4,350 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strucked | Contact Us</title>
+    <meta name="description" content="Contact Struked LLC — Request a construction cost estimate. Talk to Zack Adams, Owner. Phone: +1 (743) 249-2196. Email: info@struked.com">
+    <title>Contact & Quote | Struked LLC — Construction Estimation & Design</title>
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- AOS Animation CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <style>
-        .page-header {
-            background: linear-gradient(rgba(13, 71, 161, 0.8), rgba(26, 26, 46, 0.9)), url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
-            padding: 150px 0 80px;
-            color: white;
-            text-align: center;
-        }
-
-        .contact-form {
-            background: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-
-        .form-control {
-            padding: 15px;
-            border-radius: 5px;
-            border: 1px solid var(--border-color);
-        }
-
-        .form-control:focus {
-            border-color: var(--primary-color);
-            box-shadow: none;
-        }
-    </style>
 </head>
 
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Strucked</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+    <!-- ========== NAVBAR ========== -->
+    <nav class="site-nav scrolled" id="siteNav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" aria-label="Struked LLC Home">
+                <img src="./Media/WhatsApp Image 2026-10-21 at 6.39.10 PM.jpeg"
+                     alt="Struked LLC"
+                     class="nav-logo-img">
+                <div class="nav-logo-text">
+                    <span class="nav-logo-brand">Struked</span>
+                    <span class="nav-logo-llc">LLC</span>
+                </div>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link" id="nav-home">Home</a>
+                <a href="about.html" class="nav-link" id="nav-about">About Us</a>
+                <a href="services.html" class="nav-link" id="nav-services">Our Services</a>
+                <a href="index.html#process" class="nav-link" id="nav-process">Our Process</a>
+                <a href="contact.html" class="nav-link active" id="nav-contact">Contact Us</a>
+            </div>
+            <a href="#quote" class="btn btn-primary btn-sm nav-cta" id="nav-quote-btn">
+                <i class="fas fa-file-invoice"></i> Request a Quote
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-center">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button"
-                            data-bs-toggle="dropdown">Services</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="services.html">General Construction</a></li>
-                            <li><a class="dropdown-item" href="services.html">Mechanical Estimation</a></li>
-                            <li><a class="dropdown-item" href="services.html">Electrical Estimation</a></li>
-                            <li><a class="dropdown-item" href="services.html">Plumbing Estimation</a></li>
-                            <li><a class="dropdown-item" href="services.html">BIM Cost Modeling</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
-                    <li class="nav-item ms-lg-3">
-                        <a class="btn btn-primary-custom btn-sm" href="login.html">Login</a>
-                    </li>
-                </ul>
+        </div>
+        <div class="nav-mobile" id="navMobile">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About Us</a>
+            <a href="services.html" class="nav-link">Our Services</a>
+            <a href="index.html#process" class="nav-link">Our Process</a>
+            <a href="contact.html" class="nav-link active">Contact Us</a>
+            <div class="nav-cta">
+                <a href="#quote" class="btn btn-primary" id="mobile-quote-btn">
+                    <i class="fas fa-file-invoice"></i> Request a Quote
+                </a>
             </div>
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1 data-aos="fade-up">Contact Us</h1>
-            <p data-aos="fade-up" data-aos-delay="100">Get a Free Estimate for Your Next Project.</p>
+    <!-- ========== PAGE HERO ========== -->
+    <section class="page-hero">
+        <div class="page-hero-bg" style="background-image: url('./Media/CostBuild-Planning-The-future-of-construction-2-1.jpg');"></div>
+        <div class="page-hero-overlay"></div>
+        <div class="container page-hero-content">
+            <nav class="breadcrumb-nav">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span style="color:rgba(255,255,255,0.7);">Contact Us</span>
+            </nav>
+            <p class="text-overline" data-aos="fade-up" style="color:var(--accent-light);">Get In Touch</p>
+            <h1 data-aos="fade-up" data-aos-delay="100">Contact Struked LLC</h1>
+            <p data-aos="fade-up" data-aos-delay="200">Submit your project details and request an accurate construction cost estimate.</p>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="section-padding bg-light">
+    <!-- ========== CONTACT SECTION ========== -->
+    <section class="section" id="quote">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right">
-                    <h2 class="mb-4">Let's Build Together</h2>
-                    <p class="text-muted mb-5">Have building drawings or plans? Upload them securely, and our estimation
-                        team will get back to you with a detailed BOQ and cost breakdown.</p>
+            <div class="contact-grid">
 
-                    <div class="d-flex align-items-center mb-4">
-                        <div class="bg-white p-3 rounded shadow-sm text-primary me-3">
-                            <i class="fas fa-phone fa-2x"></i>
+                <!-- Contact Info -->
+                <div data-aos="fade-right">
+                    <p class="text-overline">Talk to Us</p>
+                    <h2>Let's Discuss Your Project</h2>
+                    <p>
+                        Ready to get an accurate estimate for your next construction project? Reach out to Struked LLC directly or fill in the quote request form and we'll get back to you promptly.
+                    </p>
+
+                    <div class="contact-cards">
+                        <a href="tel:+17432492196" class="contact-card" id="contact-phone-link">
+                            <div class="contact-card-ico">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-card-info">
+                                <div class="contact-card-label">Call Us</div>
+                                <div class="contact-card-val">+1 (743) 249-2196</div>
+                            </div>
+                            <i class="fas fa-arrow-right" style="color:var(--text-light); font-size:0.8rem;"></i>
+                        </a>
+
+                        <a href="mailto:info@struked.com" class="contact-card" id="contact-email-link">
+                            <div class="contact-card-ico">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-card-info">
+                                <div class="contact-card-label">Email Us</div>
+                                <div class="contact-card-val">info@struked.com</div>
+                            </div>
+                            <i class="fas fa-arrow-right" style="color:var(--text-light); font-size:0.8rem;"></i>
+                        </a>
+
+                        <div class="contact-card">
+                            <div class="contact-card-ico" style="background:var(--accent);color:var(--dark);">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <div class="contact-card-info">
+                                <div class="contact-card-label">Company Owner</div>
+                                <div class="contact-card-val">Zack Adams</div>
+                            </div>
                         </div>
-                        <div>
-                            <h5 class="mb-1">Call Us</h5>
-                            <p class="mb-0 text-muted">(612) 448-2546</p>
+
+                        <div class="contact-card">
+                            <div class="contact-card-ico">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="contact-card-info">
+                                <div class="contact-card-label">Company</div>
+                                <div class="contact-card-val">Struked LLC</div>
+                            </div>
+                        </div>
+
+                        <div class="contact-card" id="contact-address-card">
+                            <div class="contact-card-ico">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-card-info">
+                                <div class="contact-card-label">Our Location</div>
+                                <div class="contact-card-val">702 Westchester Dr Apt F,<br>High Point, NC 27262, USA</div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="d-flex align-items-center mb-4">
-                        <div class="bg-white p-3 rounded shadow-sm text-primary me-3">
-                            <i class="fas fa-envelope fa-2x"></i>
-                        </div>
-                        <div>
-                            <h5 class="mb-1">Email Us</h5>
-                            <p class="mb-0 text-muted">info@struked.com</p>
-                        </div>
-                    </div>
-
-                    <div class="d-flex align-items-center mb-4">
-                        <div class="bg-white p-3 rounded shadow-sm text-primary me-3">
-                            <i class="fas fa-map-marker-alt fa-2x"></i>
-                        </div>
-                        <div>
-                            <h5 class="mb-1">Our Office</h5>
-                            <p class="mb-0 text-muted">702 Westchester Dr Apt F
-High Point, NC 27262
-USA</p>
-                        </div>
+                    <div style="margin-top:2.5rem; padding:1.5rem; background:var(--surface-2); border-radius:var(--radius-md); border:1px solid var(--border);">
+                        <h4 style="font-size:1rem; margin-bottom:0.75rem;">
+                            <i class="fas fa-info-circle" style="color:var(--accent); margin-right:0.5rem;"></i>
+                            What to Include in Your Request
+                        </h4>
+                        <ul style="display:flex; flex-direction:column; gap:0.5rem;">
+                            <li style="display:flex; gap:0.5rem; align-items:flex-start; font-size:0.88rem; color:var(--text-muted);">
+                                <i class="fas fa-check" style="color:var(--accent); margin-top:0.2rem; font-size:0.75rem; flex-shrink:0;"></i>
+                                Project drawings, blueprints, or plans (if available)
+                            </li>
+                            <li style="display:flex; gap:0.5rem; align-items:flex-start; font-size:0.88rem; color:var(--text-muted);">
+                                <i class="fas fa-check" style="color:var(--accent); margin-top:0.2rem; font-size:0.75rem; flex-shrink:0;"></i>
+                                Project type and general scope description
+                            </li>
+                            <li style="display:flex; gap:0.5rem; align-items:flex-start; font-size:0.88rem; color:var(--text-muted);">
+                                <i class="fas fa-check" style="color:var(--accent); margin-top:0.2rem; font-size:0.75rem; flex-shrink:0;"></i>
+                                Which service you're requesting
+                            </li>
+                            <li style="display:flex; gap:0.5rem; align-items:flex-start; font-size:0.88rem; color:var(--text-muted);">
+                                <i class="fas fa-check" style="color:var(--accent); margin-top:0.2rem; font-size:0.75rem; flex-shrink:0;"></i>
+                                Your contact information for follow-up
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="col-lg-7" data-aos="fade-left">
-                    <div class="contact-form">
-                        <h3 class="mb-4">Request a Free Estimate</h3>
-                        <form action="#" method="POST" enctype="multipart/form-data">
-                            <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                <!-- Quote Request Form -->
+                <div data-aos="fade-left">
+                    <div class="quote-form-wrap" id="quote-form-section">
+                        <h3>Request a Quote</h3>
+                        <p class="sub">Fill in your project details below and we'll prepare an estimate tailored to your needs.</p>
+
+                        <form id="quoteForm" novalidate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="fullName">Full Name <span>*</span></label>
+                                    <input type="text" id="fullName" name="fullName" class="form-control"
+                                           placeholder="e.g. John Smith" required minlength="2">
                                 </div>
-                                <div class="col-md-6 mb-3">
-                                    <input type="email" class="form-control" placeholder="Your Email" required>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <input type="text" class="form-control" placeholder="Company Name" required>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <select class="form-control" required>
-                                        <option value="" disabled selected>Service Required</option>
-                                        <option value="general">General Construction Estimation</option>
-                                        <option value="mep">MEP Estimation</option>
-                                        <option value="bim">BIM Cost Modeling</option>
-                                        <option value="other">Other</option>
-                                    </select>
+                                <div class="form-group">
+                                    <label for="email">Email Address <span>*</span></label>
+                                    <input type="email" id="email" name="email" class="form-control"
+                                           placeholder="you@company.com" required>
                                 </div>
                             </div>
-                            <div class="mb-3">
-                                <label class="form-label text-muted">Upload Drawings/Plans (PDF, ZIP, Max: 50MB)</label>
-                                <input type="file" class="form-control" accept=".pdf,.zip,.rar">
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Phone Number <span>*</span></label>
+                                    <input type="tel" id="phone" name="phone" class="form-control"
+                                           placeholder="+1 (555) 000-0000" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="company">Company Name</label>
+                                    <input type="text" id="company" name="company" class="form-control"
+                                           placeholder="Your Company Name">
+                                </div>
                             </div>
-                            <div class="mb-4">
-                                <textarea class="form-control" rows="5"
-                                    placeholder="Project Details & Requirements"></textarea>
+
+                            <div class="form-group">
+                                <label for="service">Service Required <span>*</span></label>
+                                <select id="service" name="service" class="form-control" required>
+                                    <option value="" disabled selected>Select a service...</option>
+                                    <option value="cost-estimation">Construction Cost Estimation</option>
+                                    <option value="material-takeoffs">Material Takeoffs</option>
+                                    <option value="design-build">Design-Build Services</option>
+                                    <option value="budget-planning">Construction Budget Planning</option>
+                                    <option value="blueprint-review">Blueprint & Plan Review</option>
+                                    <option value="multiple">Multiple Services</option>
+                                    <option value="other">Other / Not Sure</option>
+                                </select>
                             </div>
-                            <button type="submit" class="btn btn-primary-custom w-100">Submit Request</button>
+
+                            <div class="form-group">
+                                <label for="projectDetails">Project Details <span>*</span></label>
+                                <textarea id="projectDetails" name="projectDetails" class="form-control" rows="5"
+                                          placeholder="Describe your project — type, size, location, scope, and any relevant details..." required minlength="20"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Upload Drawings / Plans <small style="color:var(--text-light); font-weight:400;">(Optional — PDF, ZIP, DWG — Max 50MB)</small></label>
+                                <label class="form-file-label" for="drawings" id="fileLabel">
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                    <span id="fileLabelText">Click to upload or drag & drop your files here</span>
+                                </label>
+                                <input type="file" id="drawings" name="drawings"
+                                       accept=".pdf,.zip,.rar,.dwg,.dxf,.png,.jpg,.jpeg"
+                                       multiple>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary form-submit" id="submitBtn">
+                                <i class="fas fa-paper-plane"></i> Submit Quote Request
+                            </button>
+
+                            <div class="form-msg" id="formMsg" role="alert"></div>
                         </form>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
+    <!-- ========== HOW IT WORKS ========== -->
+    <section class="section section-muted">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <h4 class="mb-4">Strucked</h4>
-                    <p>Providing industry-leading construction estimation services to help contractors and developers
-                        win bids and maximize profits.</p>
+            <div class="section-header center" data-aos="fade-up">
+                <p class="text-overline">What Happens Next</p>
+                <h2>After You Submit Your Request</h2>
+                <p>Here's what you can expect after filling out the quote request form.</p>
+            </div>
+
+            <div class="process-steps" style="margin-top:3rem;">
+                <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-num">1</div>
+                    <h3>We Receive Your Request</h3>
+                    <p>Your project details and any uploaded documents are reviewed by our estimation team.</p>
                 </div>
-                <div class="col-lg-4 mb-4">
-                    <h5 class="mb-4">Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="about.html">About Us</a></li>
-                        <li class="mb-2"><a href="services.html">Services</a></li>
-                        <li class="mb-2"><a href="contact.html">Contact Us</a></li>
-                    </ul>
+                <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-num">2</div>
+                    <h3>We Review Your Documents</h3>
+                    <p>We carefully examine your drawings and project scope to understand the requirements.</p>
                 </div>
-                <div class="col-lg-4 mb-4">
-                    <h5 class="mb-4">Contact Info</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@struked.com</li>
-                        <li class="mb-2"><i class="fas fa-phone me-2"></i>+1 (743) 249-2196</li>
-                    </ul>
+                <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-num">3</div>
+                    <h3>Estimate is Prepared</h3>
+                    <p>Our team prepares a detailed cost estimate and material takeoffs based on your documentation.</p>
+                </div>
+                <div class="process-step" data-aos="fade-up" data-aos-delay="400">
+                    <div class="step-num">4</div>
+                    <h3>Estimate Delivered</h3>
+                    <p>You receive your organized, detailed estimate ready for planning, bidding, and budgeting.</p>
                 </div>
             </div>
-            <hr class="mt-4 mb-3 border-secondary">
-            <div class="text-center">
-                <p class="mb-0">&copy; 2026 Strucked. All Rights Reserved.</p>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo-wrap">
+                        <img src="./Media/WhatsApp Image 2026-10-21 at 6.39.10 PM.jpeg"
+                             alt="Struked LLC"
+                             class="footer-logo-img">
+                        <div class="footer-logo-text">
+                            <span class="footer-logo-brand">Struked</span>
+                            <span class="footer-logo-llc">LLC</span>
+                        </div>
+                    </div>
+                    <p class="footer-desc">Struked LLC provides accurate construction cost estimation and design services to help general contractors and subcontractors plan projects with confidence.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="footer-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="footer-social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer-social" aria-label="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-col-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right" style="font-size:0.65rem;"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right" style="font-size:0.65rem;"></i> About Us</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right" style="font-size:0.65rem;"></i> Our Services</a></li>
+                        <li><a href="index.html#process"><i class="fas fa-chevron-right" style="font-size:0.65rem;"></i> Our Process</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right" style="font-size:0.65rem;"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-col-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#cost-estimation"><i class="fas fa-chevron-right" style="font-size:0.65rem;"></i> Cost Estimation</a></li>
+                        <li><a href="services.html#material-takeoffs"><i class="fas fa-chevron-right" style="font-size:0.65rem;"></i> Material Takeoffs</a></li>
+                        <li><a href="services.html#design-build"><i class="fas fa-chevron-right" style="font-size:0.65rem;"></i> Design-Build</a></li>
+                        <li><a href="services.html#budget-planning"><i class="fas fa-chevron-right" style="font-size:0.65rem;"></i> Budget Planning</a></li>
+                        <li><a href="services.html#blueprint-review"><i class="fas fa-chevron-right" style="font-size:0.65rem;"></i> Blueprint Review</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-col-title">Contact Info</h4>
+                    <div class="footer-contact-items">
+                        <div class="footer-contact-item"><i class="fas fa-user"></i><span>Zack Adams, Owner</span></div>
+                        <div class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:+17432492196">+1 (743) 249-2196</a></div>
+                        <div class="footer-contact-item"><i class="fas fa-envelope"></i><a href="mailto:info@struked.com">info@struked.com</a></div>
+                        <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>702 Westchester Dr Apt F,<br>High Point, NC 27262, USA</span></div>
+                        <div class="footer-contact-item" style="margin-top:0.5rem;">
+                            <a href="#quote" class="btn btn-primary btn-sm" id="footer-quote-btn">
+                                <i class="fas fa-file-invoice"></i> Request a Quote
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copy">&copy; 2026 Struked LLC. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
-
 </html>
